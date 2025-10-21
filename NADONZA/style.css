@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;  /* Pure elegant black */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 215, 0, 0.08); /* Gold transparent glow */
+    padding: 40px;
+    width: 500px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
+    text-align: center;
+    color: #FFD700;
+    gap: 20px;
+}
+
+.container h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle { 
+    font-size: 16px; 
+    opacity: 0.9; 
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    outline: none;
+    background: rgba(255,255,255,0.08);
+    color: #FFD700;
+    font-size: 16px;
+}
+
+textarea { resize: none; height: 130px; }
+
+button {
+    background: #FFD700;
+    color: black;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { background: #ffea00; transform: scale(1.05); }
+
+small { 
+    display: block; 
+    text-align: right; 
+    font-size: 13px; 
+    color: white;
+    opacity: 0.8; 
+}
+
+/* popup */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    padding: 30px 40px;
+    border-radius: 10px;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(255,215,0,0.4);
+    font-size: 18px;
+}
+.hidden { display: none; }
+.table-title {
+    color: gold;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.gold-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0f0f0f;
+    color: gold;
+    border: 1px solid gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gold-table th, .gold-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+}
+
+.gold-table th {
+    font-weight: bold;
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.gold-table tr:hover {
+    background: rgba(255, 215, 0, 0.15);
+    transition: 0.3s;
+}
